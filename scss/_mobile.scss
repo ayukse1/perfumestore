@@ -1,0 +1,250 @@
+// notebooks and smaller
+@media(max-width:1024px) {
+    html{
+        font-size: 9px;
+    }
+    .main-nav{
+        flex-direction: column;
+        &__items{
+            padding-bottom: 2rem;
+            a{
+                margin: 0rem 1rem;
+            }
+        }
+        &__buttons{
+            margin-bottom: 1rem;
+        }
+    }
+    .search:hover .search-btn{
+        position: absolute;
+        left: 16rem;
+        top: 0rem;
+    }
+    .header-content{
+        #left{
+            max-width: 50rem;
+        }
+    }
+    .card{
+        flex-wrap: wrap;
+        &-1{
+            max-width: 30%;
+        }
+        &-2{
+            max-width: 30%;
+        }
+    }
+    .card-side{
+        flex-wrap: wrap;
+        &-1{
+            max-width: 40%;
+        }
+        &-2{
+            max-width: 40%;
+        }
+    }
+    .home_b{
+        .section-b{
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            .left-b{
+                max-width: 100%;
+                ul{
+                    justify-content: center;
+                }
+            }
+            .right-b{
+                max-width: 75%;
+            }
+        }
+    }
+    .subscribe-box{
+        border-radius: 2rem;
+        &-left{
+            max-width: 70%;
+        }
+    }
+    .footer{
+        &-parts{
+            &-a{
+                max-width: 30%;
+                ul{
+                    display: none;
+                }
+                .powered{
+                    margin-top: 0rem;
+                }
+            }
+            &-b{
+                max-width: 30%;
+            }
+            &-c{
+                display: none;
+            }
+        }
+    }
+}
+
+// tablets and smaller
+@media(max-width:768px) {
+    html{
+        font-size: 8px;
+    }
+    .search:hover .search-btn{
+        position: absolute;
+        left: 18rem;
+        top: 0rem;
+    }
+    .header-content{
+        height: 70vh;
+        #left{ 
+            max-width: 40rem;
+        }
+    }
+    .card{
+        flex-wrap: wrap;
+        &-1{
+            max-width: 50%;
+        }
+        &-2{
+            max-width: 50%;
+        }
+    }
+    .card-side{
+        flex-wrap: wrap;
+        &-1{
+            max-width: 60%;
+        }
+        &-2{
+            max-width: 60%;
+        }
+    }
+    .subscribe-box{
+        border-radius: 0rem;
+    }
+    .blog{
+        .section-blog{
+            background: none;
+            &-cards{
+                flex-wrap: wrap;
+                &-blocks{
+                    max-width: 45%;
+                    margin-bottom: 2rem;
+                }
+            }
+            h4{
+                color: $primary-color;
+                padding-bottom: 0;
+            }
+            &-cards{
+                margin-top: 0;
+            }
+        }
+
+    }
+    .sidepage_cherry_main_right_nav{
+        flex-direction: column;
+        &_parts{
+            width: 100%;
+            padding: 0.5rem 1rem;
+            p{
+                padding: 0rem 1rem;
+            }
+        }
+        .btn-side{
+            width: 80%;
+        }
+    }
+}
+
+// mobile devices
+@media(max-width:576px) {
+    html{
+        font-size: 7px;
+    }
+    .search:hover .search-btn{
+        position: absolute;
+        left: 22rem;
+        top: 0rem;
+    }
+    .header-content{
+        #left{ 
+            max-width: 65%;
+            h1{
+                font-size: 4rem;
+            }
+            ul{        
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .home_a{
+        .section-a{
+            .header-a{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }    
+    }
+    .card{
+        justify-content: center;
+        &-1{
+            max-width: 60%;
+        }
+        &-2{
+            max-width: 60%;
+        }
+    }
+    .card-side{
+        justify-content: center;
+        &-1{
+            max-width: 60%;
+        }
+        &-2{
+            max-width: 60%;
+        }
+    }
+    .subscribe-box{
+        &-left{
+            max-width: 51%;
+        }
+    }
+    .comments{
+        .section-comments{
+            &_cards{
+                flex-wrap: wrap;
+                &_block{
+                    max-width: 40%;
+                }
+            }
+        }
+    }
+    .blog{
+        .section-blog{
+            &-cards{
+                &-blocks{
+                    max-width: 60%;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+// small mobile devices
+@media(max-width:480px) {
+    html{
+        font-size: 6px;
+    }
+    .search:hover .search-btn{
+        position: absolute;
+        left: 23rem;
+        top: 0rem;
+    }
+    .subscribe-box{
+        &-left{
+            max-width: 55%;
+        }
+    }
+}

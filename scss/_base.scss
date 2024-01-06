@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Prompt', sans-serif;
+    font-weight: lighter;
+  }
+
+a{
+    text-decoration: none;
+
+} 
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 100;
+    padding-bottom: 1rem 0rem;
+    line-height: 6rem;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 100;
+    padding: 1rem 0rem;
+    line-height: 4rem;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 100;
+    padding: 1rem 0rem;
+    line-height: 3rem;
+}
+h4{
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 100;
+    padding: 1rem 0rem;
+    line-height: 5rem;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: 1rem 0rem;
+}
+span{
+    font-weight: 800;
+}
+
+::placeholder{
+    font-size: 1.2rem;
+}

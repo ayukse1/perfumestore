@@ -1,0 +1,33 @@
+.sidepage_main_left_log{
+    display: flex;
+
+    h3{
+        border-bottom: 1px solid $grey-color;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    &_first{
+        padding-right: 5rem;
+        width: 50%;
+    }
+    &_second{
+        width: 50%;
+        padding-right: 5rem;
+        input{
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid $grey-color;
+            border-radius: 1rem;
+        }
+        a{
+            margin: 1rem 0rem;
+        }
+        
+    }
+}
+.forgotten-password{
+    color: $dark-color;
+}
+a[class^='forgotten-password']:hover{
+    color: $secondary-color;
+}

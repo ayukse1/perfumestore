@@ -1,0 +1,197 @@
+.home_a{
+        display: flex;
+        justify-content: space-between;
+        margin: 0rem 5rem;
+        margin-bottom: 5rem;
+        border-radius: 2rem;
+    .section-a{
+        .header-a{
+            display: flex;
+            justify-content: space-between;
+            h2{
+                padding: 0rem 2.5rem;
+                color: $primary-color;
+                font-weight: lighter;
+                span{
+                    font-weight: bold;
+                }
+            }
+            ul{
+                display: flex;
+
+                li{
+                    padding: 0rem 2.5rem;
+
+                    a{
+                        color: $dark-color;
+                        font-weight: lighter;
+                    }
+                }
+            }
+            .headings{
+                :hover{
+                    text-decoration: underline;
+                    text-underline-offset: 1rem;
+                }
+                :active{
+                    text-decoration: underline;
+                    text-underline-offset: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.home_b{
+    margin: 0rem 5rem;
+    margin-bottom: 5rem;
+    .section-b{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $light-color;
+        border-radius: 2rem;
+        padding: 0rem 2rem;
+
+        .left-b{
+            max-width: 40rem;
+            h4{
+                font-weight: lighter;
+                color: $primary-color;
+                span{
+                    font-weight: bold;
+                }
+            }
+            ul{
+                display: flex;
+            }
+        }
+        .right-b{
+            max-width: 57%;
+            padding-top: 2rem;
+            &-img{
+                border-radius: 2rem;
+            }
+        }
+    }
+}
+
+.comments{
+    .section-comments{
+        margin-bottom: 5rem;
+        &_cards{
+            display: flex;
+            justify-content: center;
+            &_block{
+                text-align: center;
+                border: 1px solid $grey-color;
+                border-radius: 1rem;
+                margin: 1rem;
+                max-width: 18vw;
+            }
+        }
+        &-header{
+            h4{
+                padding: 1rem 0rem;
+                color: $primary-color;
+                text-align: center;
+                span{
+                    font-weight: bold;
+                }
+            }
+            p{
+                padding: 0.5rem 0.5rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.subscribe{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &-box{
+        background:url(../img/subscribe.jpg) center;
+        padding: 3rem 7rem;
+        border-radius: 2rem;
+        display: flex;
+    
+        &-left{
+            max-width: 60%;
+            h2{
+                padding: 0.5rem 0rem;
+            }
+            p{
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
+.email{
+    font-size: 1.3rem;
+    padding: 0.6rem 3rem;
+    border-radius: 2rem;
+    background:none;
+    border: 2px solid $dark-color;
+    z-index: 1;
+}
+input:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
+
+.blog{
+    margin-top: 4rem;
+    .section-blog{
+        background-color: $primary-color;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        text-align: center;
+        h4{
+            color: $light-color;
+        }
+        p{
+            color: $light-color;
+        }
+        &-cards{
+            display: flex;
+            justify-content:center;
+            margin: 2rem 11rem;
+            &-blocks{
+                margin: 0rem 1rem;
+                background-color: $light-color;
+                border-radius: 2rem;
+                img{
+                    border-top-left-radius: 2rem;
+                    border-top-right-radius: 2rem;
+                }
+
+                p{
+                    color: $dark-color;
+                }
+                &-down{
+                    padding: 0rem 1rem;
+                    p{
+                        padding-bottom: 2rem;
+                    }
+                    &-up{
+                        display: flex;
+                        justify-content: space-between;
+                        h3{
+                            color: $primary-color;
+                            width: 12rem;
+                            text-align: left;
+                        }
+                        p{
+                            width: 5rem;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

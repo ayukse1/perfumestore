@@ -1,0 +1,338 @@
+.container{
+    padding: 0;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    &-1{
+        &_img{
+            :hover{
+                scale: 125%;
+                transition:all 0.5s ease-out;
+            }
+        }
+        &-down{
+            ul{
+                li{
+                    padding: 0rem 0.5rem;
+                }
+            }
+            h3{
+                padding: 0.5rem 0rem;
+            }
+            a{
+                margin-top: 1.5rem;
+            }
+            &-btn{
+                display: flex;
+                align-items: center;
+            }
+        }
+        max-width: 20%;
+    }
+    &-2{
+        &_img{
+            :hover{
+                transform: rotate(30deg);
+                transition:all 0.5s ease-out;
+            }
+        }
+        &-down{
+            ul{
+                li{
+                    padding: 0rem 0.5rem;
+                }
+            }
+            h3{
+                padding: 0.5rem 0rem;
+            }
+            a{
+                margin-top: 1.5rem;
+            }
+            &-btn{
+                display: flex;
+                align-items: center;
+            }
+        }
+        max-width: 20%;
+    }
+}
+
+.card-side{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    &-1{
+        &_img{
+            :hover{
+                scale: 125%;
+                transition:all 0.5s ease-out;
+            }
+        }
+        &-down{
+            ul{
+                li{
+                    padding: 0rem 0.5rem;
+                }
+            }
+            h3{
+                padding: 0.5rem 0rem;
+            }
+            a{
+                margin-top: 1.5rem;
+            }
+            &-btn{
+                display: flex;
+                align-items: center;
+            }
+        }
+        max-width: 30%;
+    }
+    &-2{
+        &_img{
+            :hover{
+                transform: rotate(30deg);
+                transition:all 0.5s ease-out;
+            }
+        }
+        &-down{
+            ul{
+                li{
+                    padding: 0rem 0.5rem;
+                }
+            }
+            h3{
+                padding: 0.5rem 0rem;
+            }
+            a{
+                margin-top: 1.5rem;
+            }
+            &-btn{
+                display: flex;
+                align-items: center;
+            }
+        }
+        max-width: 30%;
+    }
+}
+
+// buttons
+%btn-shared{
+    display: inline-block;
+    transition: all .5s ease;
+    border:none;
+    cursor:pointer;
+}
+
+.btn{
+    &-nav{
+        @extend %btn-shared;
+        padding: 1rem;
+        color: $light-color;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    &-header-1{
+        @extend %btn-shared;
+        padding: 1rem;
+        color: $dark-color;
+        background-color: $light-color;
+        border-radius: 50%;
+    }
+    &-header-5{
+        @extend %btn-shared;
+        padding: 1rem;
+        color: $dark-color;
+        background-color: $light-color;
+        border-radius: 1rem;
+        border: 0.5px solid $dark-color;
+    }
+    &-header-4{
+        @extend %btn-shared;
+        padding: 1rem;
+        margin: 1rem 0rem;
+        color: $light-color;
+        background-color: $secondary-color;
+        border-radius: 50%;
+    }
+    &-header-2{
+        @extend %btn-shared;
+        padding: 0.8rem 4rem;
+        color: $dark-color;
+        background-color: $light-color;
+        border-radius: 2rem;
+    }
+    &-header-3{
+        @extend %btn-shared;
+        padding: 0.8rem 4rem;
+        color: $light-color;
+        background-color: $primary-color;
+        border-radius: 2rem;
+        border: 1px solid $light-color;
+    }
+    &-carts{
+        @extend %btn-shared;
+        color: $light-color;
+        background-color: $secondary-color;
+        border-radius: 1rem;
+        padding: 0.7rem 1rem;
+        margin: 2rem 3rem;
+        display: flex;
+        justify-content: center;
+        a{
+            color: $light-color;
+        }
+    }
+    &-selection{
+        @extend %btn-shared;
+        color: $secondary-color;
+        background-color: $light-color;
+        border: 1px solid $secondary-color;
+        border-radius: 1rem;
+        padding: 0.7rem 1rem;
+        margin-top: 1rem;
+        margin-right: 3rem;
+    }
+    &-light{
+        @extend %btn-shared;
+        color: $dark-color;
+        background-color: $light-color;
+        border-radius: 1rem;
+        border: 1px solid $dark-color;
+        padding: 0.5rem 1rem;
+    }
+    &-sub{
+        font-size: 1.3rem;
+        @extend %btn-shared;
+        color: $light-color;
+        background-color: $dark-color;
+        border: 1px solid $dark-color;
+        border-radius: 2rem;
+        left: 70rem;
+        padding: 0.75rem 1.5rem;
+        z-index: 2;
+        margin-left: -4.5rem;
+    }
+    &-sub-2{
+        font-size: 1.3rem;
+        @extend %btn-shared;
+        color: $light-color;
+        background-color: $dark-color;
+        border: 1px solid $dark-color;
+        border-radius: 2rem;
+        left: 137rem;
+        padding: 0.75rem 1.5rem;
+        z-index: 2;
+        margin-left: -3.5rem;
+    }
+    &-read{
+        @extend %btn-shared;
+        color: $light-color;
+        background-color: $secondary-color;
+        padding: 0.6rem 5rem;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+    &-arrow{
+        @extend %btn-shared;
+        padding: 1.3rem;
+        color: $dark-color;
+        background-color: $light-color;
+        border: 1px solid $dark-color;
+        border-radius: 50%;
+    }
+    &-continue{
+        @extend %btn-shared;
+        color: $light-color;
+        background-color: $secondary-color;
+        padding: 1rem 7rem;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+    &-side{
+        @extend %btn-shared;
+        color: $dark-color;
+        background-color: $light-color;
+        padding: 1rem 0rem;
+        border: 1px solid $dark-color;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            padding: 0rem 2rem;
+        }
+    }
+}
+
+// hover buttons
+a[class^='btn-header-1']:hover{
+    color: $light-color;
+    background-color: $secondary-color;
+}
+a[class^='btn-header-2']:hover{
+    color: $light-color;
+    background-color: $secondary-color;
+}
+a[class^='btn-header-3']:hover{
+    color: $dark-color;
+    background-color: $light-color;
+}
+a[class^='btn-header-5']:hover{
+    color: $light-color;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+}
+ul[class^='btn-carts']:hover{
+    background-color: $primary-color;
+}
+a[class^='btn-selection']:hover{
+    color: $light-color;
+    background-color: $secondary-color;
+}
+div[class^='section-comments_cards_block']:hover{
+    color: $light-color;
+    background-color: $secondary-color;
+}
+input[class^='btn-sub']:hover{
+    background-color: $primary-color;
+}
+a[class^='btn-read']:hover{
+    background-color: $primary-color;
+}
+i[class^='btn-header-4']:hover{
+    color: $light-color;
+    background-color: $primary-color;
+}
+a[class^='shop-account']:hover{
+    color: $secondary-color;
+}
+a[class^='btn-continue']:hover{
+    background-color: $primary-color;
+}
+div[class^='btn-side']:hover{
+    opacity: 75%;
+}
+
+
+#backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#backtotop i {
+    color: $secondary-color;
+    font-size: 4.5rem;
+    transition: color .6s;
+}
+
+#backtotop i:hover {
+    color: $dark-color;
+}
